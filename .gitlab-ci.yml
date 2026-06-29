@@ -1,0 +1,47 @@
+stages:
+  - build
+  - test
+  - deploy
+  - rollback
+
+variables:
+  IMAGE_NAME: devops-app
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker build -t $IMAGE_NAME:$CI_COMMIT_SHA .
+
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - python app.py &
+    - sleep 5
+    - curl http://localhost:3000/health
+
+deploy_staging:
+  stage: deploy
+  script:
+    - echo "Deploying to STAGING..."
+  only:
+    - dev
+
+deploy_production:
+  stage: deploy
+  script:
+    - echo "Deploying to PRODUCTION..."
+  only:
+    - main
+
+rollback:
+  stage: rollback
+  script:
+    - echo "Rolling back deployment..."
+    - kubectl rollout undo deployment/app
+  when: manual
+  only:
+    - main

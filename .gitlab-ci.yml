@@ -17,8 +17,10 @@ build:
 
 test:
   stage: test
+  image: python:3.10
   script:
     - echo "Running tests..."
+    - pip install flask
     - python app.py &
     - sleep 5
     - curl http://localhost:3000/health

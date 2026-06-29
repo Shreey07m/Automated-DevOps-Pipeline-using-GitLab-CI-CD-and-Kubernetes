@@ -25,19 +25,18 @@ test:
     - sleep 5
     - curl http://localhost:3000/health
 
+
 deploy_staging:
   stage: deploy
-  image: bitnami/kubectl:latest
   script:
-    - kubectl apply -f deployment.yaml
-    - kubectl apply -f service.yaml
+    - echo "Deploying to STAGING environment (simulated)"
   only:
     - dev
 
 deploy_production:
   stage: deploy
   script:
-    - echo "Deploying to PRODUCTION..."
+    - echo "Deploying to PRODUCTION environment (simulated)"
   only:
     - prod
 

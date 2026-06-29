@@ -30,35 +30,38 @@ Code Push → Build → Test → Deploy → Rollback
 ```
 ## 🚀 How to Run
 
-# Build image
+## Build image
 ```bash
 docker build -t devops-app .
-```
 
-# Run container
+
+## Run container
 ```bash
 docker run -p 3000:3000 devops-app
-```
 
-# Start Kubernetes
+
+## Start Kubernetes
 ```bash
 minikube start
-```
-# Deploy app
+
+## Deploy app
 ```bash
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
-```
 
-# Access app
+
+## Access app
 ```bash
 minikube service devops-service
-```
-
 
 ---
+## 🎯 Output
 
-# ✅ ✅ ADD ONE MORE THING (VERY IMPORTANT)
+The application is successfully deployed on Kubernetes and accessible via Minikube service, with CI/CD pipeline ensuring automated build and testing.
+
+## 📸 Project Screenshots
+
+### ✅ Application Running on Kubernetes
 ![alt text](image.png)
 ---
 ![alt text](image-1.png)

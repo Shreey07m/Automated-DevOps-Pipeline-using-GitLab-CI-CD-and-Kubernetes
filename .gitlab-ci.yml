@@ -27,8 +27,10 @@ test:
 
 deploy_staging:
   stage: deploy
+  image: bitnami/kubectl:latest
   script:
-    - echo "Deploying to STAGING..."
+    - kubectl apply -f deployment.yaml
+    - kubectl apply -f service.yaml
   only:
     - dev
 
@@ -37,7 +39,7 @@ deploy_production:
   script:
     - echo "Deploying to PRODUCTION..."
   only:
-    - main
+    - prod
 
 rollback:
   stage: rollback
@@ -46,4 +48,5 @@ rollback:
     - kubectl rollout undo deployment/app
   when: manual
   only:
-    - main
+    - dev
+    - prod

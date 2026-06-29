@@ -59,6 +59,8 @@ minikube service devops-service
 
 The application is successfully deployed on Kubernetes and accessible via Minikube service, with CI/CD pipeline ensuring automated build and testing.
 
+
+
 ## 📸 Project Screenshots
 
 ### ✅ Application Running on Kubernetes
@@ -69,12 +71,14 @@ The application is successfully deployed on Kubernetes and accessible via Miniku
 ![alt text](image-2.png)
 ---
 
+### ✅ GitLab CI/CD Pipeline Success
+![alt text](image-3.png)
+
+### ✅ Deployment & Service Verification
+![alt text](image-4.png)
+
 - running app ✅  
 - pipeline success ✅  
-
-👉 This impresses recruiter instantly 🔥
-
----
 
 
 

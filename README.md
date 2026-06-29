@@ -33,27 +33,27 @@ Code Push → Build → Test → Deploy → Rollback
 ## Build image
 ```bash
 docker build -t devops-app .
-
+```
 
 ## Run container
 ```bash
 docker run -p 3000:3000 devops-app
-
+```
 
 ## Start Kubernetes
 ```bash
 minikube start
-
+```
 ## Deploy app
 ```bash
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
-
+```
 
 ## Access app
 ```bash
 minikube service devops-service
-
+```
 ---
 ## 🎯 Output
 

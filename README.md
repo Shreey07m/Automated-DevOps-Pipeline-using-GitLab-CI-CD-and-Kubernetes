@@ -60,8 +60,11 @@ minikube service devops-service
 
 # ✅ ✅ ADD ONE MORE THING (VERY IMPORTANT)
 ![alt text](image.png)
+---
 ![alt text](image-1.png)
+---
 ![alt text](image-2.png)
+---
 
 - running app ✅  
 - pipeline success ✅  
@@ -70,14 +73,5 @@ minikube service devops-service
 
 ---
 
-# ✅ ✅ HOW TO PUSH TO GITHUB
 
-If repo not created:
-
-```bash
-git init
-git remote add origin <your-github-repo-url>
-git add .
-git commit -m "initial project"
-git push -u origin main
 

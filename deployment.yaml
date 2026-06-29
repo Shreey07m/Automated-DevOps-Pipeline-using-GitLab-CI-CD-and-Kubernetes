@@ -14,7 +14,13 @@ spec:
     spec:
       containers:
       - name: devops-app
-        image: devops-app:latest
-        imagePullPolicy: Never
+        image: 971615377402.dkr.ecr.us-east-1.amazonaws.com/devops-app:latest
         ports:
         - containerPort: 3000
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "200m"
+            memory: "256Mi"

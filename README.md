@@ -63,19 +63,22 @@ The application is successfully deployed on Kubernetes and accessible via Miniku
 
 ## 📸 Project Screenshots
 
+## 📸 Project Screenshots
+
 ### ✅ Application Running on Kubernetes
-![alt text](image.png)
----
-![alt text](image-1.png)
----
-![alt text](image-2.png)
----
+![Application Running](Images/image.png)
 
 ### ✅ GitLab CI/CD Pipeline Success
-![alt text](image-3.png)
+![Pipeline Success](Images/image-1.png)
 
 ### ✅ Deployment & Service Verification
-![alt text](image-4.png)
+![Kubernetes Deployment](Images/image-2.png)
+
+### ✅ GitLab CI/CD Pipeline Success
+![Pipeline Success](Images/image-3.png)
+
+### ✅ Deployment & Service Verification
+![Deployment Verification](Images/image-4.png)
 
 - running app ✅  
 - pipeline success ✅  

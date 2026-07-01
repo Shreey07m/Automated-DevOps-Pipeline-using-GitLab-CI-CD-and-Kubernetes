@@ -67,13 +67,17 @@ Implemented monitoring using Prometheus and Grafana for real-time observability.
 
 ### ✅ Application Running on Kubernetes
 ![Application Running](Images/image.png)
+---
 
 ![Pipeline Success](Images/image-1.png)
+---
 
 ![Kubernetes Deployment](Images/image-2.png)
+---
 
 ### ✅ GitLab CI/CD Pipeline Success
 ![Pipeline Success](Images/image-3.png)
+---
 
 ### ✅ Deployment & Service Verification
 ![Deployment Verification](Images/image-4.png)

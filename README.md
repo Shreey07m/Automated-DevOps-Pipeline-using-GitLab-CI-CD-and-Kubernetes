@@ -68,10 +68,8 @@ Implemented monitoring using Prometheus and Grafana for real-time observability.
 ### ✅ Application Running on Kubernetes
 ![Application Running](Images/image.png)
 
-### ✅ GitLab CI/CD Pipeline Success
 ![Pipeline Success](Images/image-1.png)
 
-### ✅ Deployment & Service Verification
 ![Kubernetes Deployment](Images/image-2.png)
 
 ### ✅ GitLab CI/CD Pipeline Success
@@ -79,15 +77,19 @@ Implemented monitoring using Prometheus and Grafana for real-time observability.
 
 ### ✅ Deployment & Service Verification
 ![Deployment Verification](Images/image-4.png)
+---
 
 ### ✅ Kubernetes Cluster Metrics
 ![Kubernetes Cluster Metrics](Images/cluster.png)
+---
 
 ### ✅ Application Pod Metrics
 ![Application Pod Metrics](Images/pods.png)
+---
 
 ### ✅ Node Metrics Dashboard
 ![Node Metrics Dashboard](Images/node.png)
+---
 
 ### ✅ Grafana Dashboard
 ![Grafana Dashboard](Images/grafana.png)
@@ -95,7 +97,6 @@ Implemented monitoring using Prometheus and Grafana for real-time observability.
 
 ### ✅ Prometheus Targets
 ![Prometheus Targets](Images/prometheus.png)
-![Prometheus Targets](Images/grafana.png)
 ---
 
 ## 🧪 Health Check
@@ -147,6 +148,7 @@ kubectl apply -f service.yaml
 - Debugged real production issues (ImagePull, networking, authentication)
 - Managed Kubernetes resources and scaling
 
+---
 
 👩‍💻 Author
 Shreeya Maliye
